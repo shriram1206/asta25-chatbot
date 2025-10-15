@@ -1,0 +1,70 @@
+[
+  {
+    "question": ["what events are happening", "show schedule", "event list", "what's happening", "events today"],
+    "answer": "We have 7 exciting events at ASTA'25:\n\n**Technical Events:**\n🌐 Web Forge\n💻 Decode & Recode\n📡 Internet Using Vibecon\n📝 Paper Presentation\n\n**Non-Technical Events:**\n🗺️ Mystric Map Challenge\n🤖 Snap with AI\n😂 Memewar\n\nAsk me about any specific event for details!"
+  },
+  {
+    "question": ["web forge", "website building", "where is web forge"],
+    "answer": "🌐 **Web Forge** (Website Building)\n\nCreate stunning websites and showcase your web development skills!\n\n📍 **Venue:** Computer Lab 1, Second Floor\n⏰ **Time:** 10:00 AM - 12:00 PM\n📋 **Category:** Technical Event\n\n**Requirements:**\n• HTML, CSS, JavaScript knowledge\n• 2 hours to build a complete website\n• Judged on design, functionality & creativity"
+  },
+  {
+    "question": ["decode recode", "python to c", "decode and recode", "where is decode"],
+    "answer": "💻 **Decode & Recode**\n\nConvert Python code to C - Test your coding translation skills!\n\n📍 **Venue:** Programming Lab, Ground Floor\n⏰ **Time:** 1:00 PM - 3:00 PM\n📋 **Category:** Technical Event\n\n**Challenge:**\n• Convert given Python algorithms to C\n• Focus on logic translation & optimization\n• Time limit: 2 hours\n• Judged on accuracy & code quality"
+  },
+  {
+    "question": ["internet using vibecon", "vibecon", "where is vibecon"],
+    "answer": "📡 **Internet Using Vibecon**\n\nExplore internet technologies in an innovative way!\n\n📍 **Venue:** Network Lab, First Floor\n⏰ **Time:** 10:00 AM - 12:00 PM\n📋 **Category:** Technical Event\n\n**What to expect:**\n• Hands-on with networking protocols\n• Real-time internet challenges\n• Team-based problem solving\n• Advanced networking concepts"
+  },
+  {
+    "question": ["where is paper presentation", "paper presentation", "paper submission"],
+    "answer": "📝 **Paper Presentation**\n\nPresent your research and innovative ideas!\n\n📍 **Venue:** Seminar Hall, Main Block\n⏰ **Time:** 2:00 PM - 5:00 PM\n⚠️ **Submission Deadline:** 14.10.2025\n📋 **Category:** Technical Event\n\n**Guidelines:**\n• 10-15 minutes presentation + 5 min Q&A\n• Focus on AI, Data Science, or emerging tech\n• Judged on innovation, clarity & technical depth\n• PPT submission required by deadline"
+  },
+  {
+    "question": ["mystric map", "map challenge", "mystric map challenge"],
+    "answer": "🗺️ **Mystric Map Challenge**\n\nSolve mysterious map-based puzzles and challenges!\n\n📍 **Venue:** Central Courtyard & Campus Grounds\n⏰ **Time:** 11:00 AM - 1:00 PM\n📋 **Category:** Non-Technical Event\n\n**Adventure includes:**\n• Campus-wide treasure hunt\n• QR code puzzles & riddles\n• Team collaboration required\n• Exciting prizes for winners!"
+  },
+  {
+    "question": ["snap with ai", "ai image", "replicate image", "snap ai"],
+    "answer": "🤖 **Snap with AI**\n\nReplicate images using AI prompts - Test your AI prompting skills!\n\n📍 **Venue:** AI Lab, Second Floor\n⏰ **Time:** 3:00 PM - 5:00 PM\n📋 **Category:** Non-Technical Event\n\n**Creative challenge:**\n• Use AI tools to recreate given images\n• Master prompt engineering techniques\n• Creativity meets technology\n• Best prompt artists win amazing prizes!"
+  },
+  {
+    "question": ["memewar", "meme war", "meme competition"],
+    "answer": "😂 **Memewar**\n\nBattle it out with the funniest memes!\n\n📍 **Venue:** Student Activity Hall\n⏰ **Time:** 4:00 PM - 6:00 PM\n📋 **Category:** Non-Technical Event\n\n**Meme battle rules:**\n• Create original & hilarious memes\n• Tech & college life themes preferred\n• Live voting by audience\n• Funniest meme creator wins big!"
+  },
+  {
+    "question": ["show results", "results", "who won", "winner", "winners"],
+    "answer": "I can show you results for specific events! Try asking:\n• 'coding results'\n• 'quiz results'\n• 'gaming results'\n\nJust mention any event name!"
+  },
+  {
+    "question": ["registration", "how to register", "register", "sign up", "fees", "registration fee"],
+    "answer": "• **Fee:** ₹300 per head\n• **Last Date:** 18.10.2025\n• **Spot registration:** Available on event day!\n\n📱 **Online Payment:**\nadvamtech.edu.in/online-fee-payment/\n\n📧 **Email:** astasct2k25@gmail.com\n\n🎁 **Attractive cash prizes** for all winners!"
+  },
+  {
+    "question": ["contact", "help", "support", "organizer", "coordinators", "phone number"],
+    "answer": "📞 **Contact ASTA'25**\n\n📧 Email: astasct2k25@gmail.com\n🌐 Website: www.selvamtech.edu.in\n📱 Mobile: 94866 48899\n\n**Faculty Coordinators:**\n• Mrs.P.Abinaya: 7397548124\n• Mrs.M.Sumathi: 9789673678\n• Mrs.S.Saranya: 9952683505\n\n**Student Coordinators:**\n• S.Basu: 9345128264\n• V.Suweetha: 7708767410\n• B.Dharunkumar: 8526506448"
+  },
+  {
+    "question": ["workshop", "fullstack", "web development workshop"],
+    "answer": "Learn **modern web development** from industry experts!\n\n• **Topics:** Frontend + Backend development\n• **Duration:** Full day session\n• **Level:** Beginner to Intermediate\n• **Venue:** To be announced\n\nGet hands-on experience with latest technologies!"
+  },
+  {
+    "question": ["fun activities", "entertainment", "games"],
+    "answer": "Enjoy **exciting fun activities** throughout the day!\n\n• **Games and competitions**\n• **Entertainment sessions**\n• **Networking opportunities**\n• **Surprise events**\n\nStay tuned for more details! 🎉"
+  },
+  {
+    "question": ["prizes", "cash prizes", "awards", "winning"],
+    "answer": "Winners will receive **exciting rewards:**\n\n• **Cash prizes** for top performers\n• **Certificates** for all winners\n• **Recognition** and awards\n\nCompete in **technical and non-technical events** to win big! 💰✨"
+  },
+  {
+    "question": ["asta", "asta25", "about event", "symposium"],
+    "answer": "**ASTA'25** - National Level Technical Symposium\n\n📅 **Date:** October 24, 2025\n🏫 **Venue:** Selvam College of Technology\n\n**Organized by:**\n• Dept. of AI & Data Science\n• Dept. of Computer Science\n• Dept. of Information Technology\n\n**Institution Highlights:**\n• NAAC Accredited with **'A' Grade**\n• Approved by **AICTE**\n• Affiliated to **Anna University**"
+  },
+  {
+    "question": ["college", "selvam", "location", "address"],
+    "answer": "📍 **Address:**\nSalem Main Road, Koulpalayam\nNamakkal - 637 003, Tamil Nadu\n\n📱 **Phone:** 94866 48899\n🌐 **Website:** www.selvamtech.edu.in\n\n**About:**\n• Autonomous Institution\n• NAAC Accredited with **'A' Grade**\n• Approved by **AICTE**\n• Affiliated to **Anna University Chennai**"
+  },
+  {
+    "question": ["schedule", "timing", "time table", "agenda", "date", "when"],
+    "answer": "🗽️ **Date:** October 24, 2025 (Friday)\n\n⏰ **Event Timeline:**\n• **Morning:** Registration & Inaugural ceremony\n• **10:00 AM onwards:** Technical & Non-Technical Events\n• **Afternoon:** Workshop & Competitions\n• **Evening:** Prize Distribution & Valedictory\n\n📝 **Detailed schedule** will be shared with registered participants!"
+  }
+]
