@@ -237,7 +237,7 @@ function getContactCard(): ContactCardData {
     ],
     studentCoordinators: [
       { name: 'S. Rasu', phone: '9345128264' },
-      { name: 'V. Suweetha', phone: '7708767410' },
+      { name: 'V. Suseetha', phone: '7708767410' },
       { name: 'B. Dharunkumar', phone: '8526506445' },
     ],
   };
