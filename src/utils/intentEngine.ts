@@ -62,6 +62,60 @@ export interface QueryResponse {
 const faqs: FAQ[] = faqsData;
 const results: Results = resultsData;
 
+// Conversation context for follow-up questions
+interface ConversationContext {
+  lastQueries: string[];
+  lastEventMentioned?: string;
+  lastTopicType?: 'event' | 'result' | 'contact' | 'registration' | 'about';
+}
+
+let conversationContext: ConversationContext = {
+  lastQueries: [],
+};
+
+/**
+ * Update conversation context
+ */
+function updateContext(query: string, topicType?: string, eventMentioned?: string) {
+  conversationContext.lastQueries.push(query);
+  if (conversationContext.lastQueries.length > 3) {
+    conversationContext.lastQueries.shift();
+  }
+  if (topicType) {
+    conversationContext.lastTopicType = topicType as any;
+  }
+  if (eventMentioned) {
+    conversationContext.lastEventMentioned = eventMentioned;
+  }
+}
+
+/**
+ * Resolve pronouns and context references
+ */
+function resolveContextReferences(query: string): string {
+  const normalized = normalize(query);
+  
+  // Handle pronouns referring to last event
+  if (conversationContext.lastEventMentioned) {
+    const pronouns = ['it', 'this', 'that', 'this event', 'that event'];
+    for (const pronoun of pronouns) {
+      if (normalized.includes(pronoun)) {
+        return query.replace(new RegExp(pronoun, 'gi'), conversationContext.lastEventMentioned);
+      }
+    }
+  }
+  
+  // Handle follow-up questions
+  if (conversationContext.lastTopicType === 'event' && 
+      (normalized.includes('more') || normalized.includes('details') || normalized.includes('tell me'))) {
+    if (conversationContext.lastEventMentioned) {
+      return `${conversationContext.lastEventMentioned} ${query}`;
+    }
+  }
+  
+  return query;
+}
+
 /**
  * Normalize text for matching
  */
@@ -303,8 +357,13 @@ export function processQuery(userQuery: string): QueryResponse {
     };
   }
   
+  // Resolve context references (pronouns, follow-ups)
+  const resolvedQuery = resolveContextReferences(userQuery);
+  const queryToProcess = resolvedQuery !== userQuery ? resolvedQuery : userQuery;
+  
   // Check if it's asking for contact info - provide contact card
-  if (isContactQuery(userQuery)) {
+  if (isContactQuery(queryToProcess)) {
+    updateContext(userQuery, 'contact');
     return {
       response: '',
       contactCard: getContactCard(),
@@ -312,7 +371,8 @@ export function processQuery(userQuery: string): QueryResponse {
   }
   
   // Check if it's asking for about/event info
-  if (isAboutQuery(userQuery)) {
+  if (isAboutQuery(queryToProcess)) {
+    updateContext(userQuery, 'about');
     return {
       response: '',
       infoCard: {

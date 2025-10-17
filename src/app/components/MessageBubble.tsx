@@ -33,8 +33,8 @@ export default function MessageBubble({ message, isUser, delay = 0 }: MessageBub
       <div
         className={`max-w-[85%] sm:max-w-[75%] px-4 sm:px-5 py-3 sm:py-3.5 rounded-3xl shadow-elegant hover-lift focus-within:ring-2 focus-within:ring-apple-blue/30 ${
           isUser
-            ? 'bg-apple-blue text-white rounded-br-lg text-right'
-            : 'bg-white/90 backdrop-blur-xl text-apple-dark rounded-bl-lg border border-white/70 text-left'
+            ? 'bg-apple-blue dark:bg-blue-600 text-white rounded-br-lg text-right'
+            : 'bg-white/90 dark:bg-gray-800/95 backdrop-blur-xl text-apple-dark dark:text-gray-100 rounded-bl-lg border border-white/70 dark:border-gray-700 text-left'
         }`}
       >
         <p className="text-sm sm:text-[15px] leading-relaxed whitespace-pre-line font-['Inter',system-ui,sans-serif]">
