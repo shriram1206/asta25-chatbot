@@ -156,18 +156,27 @@ function isResultQuery(query: string): { isResult: boolean; eventType?: string }
   // Check for event type - ORDER MATTERS! Check most specific first
   const eventMap: { [key: string]: string } = {
     'mystric map': 'mystricmap',
+    'mystic map': 'mystricmap',
     'mystric': 'mystricmap',
     'webforge': 'webforge',
     'web forge': 'webforge',
     'decode': 'decode',
     'recode': 'decode',
-    'vibecon': 'vibecon',
-    'paper': 'paper',
-    'presentation': 'paper',
+    'vibecode': 'vibecode',
+    'vibecon': 'vibecode',
+    'paper cse': 'paper_cse',
+    'paper it': 'paper_it',
+    'paper': 'paper_cse',
+    'presentation': 'paper_cse',
     'snap ai': 'snapai',
+    'snap with ai': 'snapai',
     'snap': 'snapai',
     'memewar': 'memewar',
+    'meme war': 'memewar',
     'meme': 'memewar',
+    'fun event': 'funevent',
+    'workshop': 'workshop',
+    'fullstack': 'workshop',
   };
   
   // Check multi-word matches first (more specific)
@@ -200,11 +209,14 @@ function formatResultCard(eventType: string): ResultCardData | null {
   const eventConfig: { [key: string]: { icon: string; title: string; color: string } } = {
     webforge: { icon: "🌐", title: "Web Forge", color: "from-blue-500 to-blue-600" },
     decode: { icon: "💻", title: "Decode & Recode", color: "from-purple-500 to-purple-600" },
-    vibecon: { icon: "📡", title: "Internet Using Vibecon", color: "from-cyan-500 to-cyan-600" },
-    paper: { icon: "📝", title: "Paper Presentation", color: "from-green-500 to-green-600" },
-    mystricmap: { icon: "🗺️", title: "Mystric Map Challenge", color: "from-orange-500 to-orange-600" },
+    vibecode: { icon: "📡", title: "Internet Using Vibecode", color: "from-cyan-500 to-cyan-600" },
+    paper_cse: { icon: "📝", title: "Paper Presentation (CSE)", color: "from-green-500 to-green-600" },
+    paper_it: { icon: "📝", title: "Paper Presentation (IT)", color: "from-teal-500 to-teal-600" },
+    mystricmap: { icon: "🗺", title: "Mystric Map Challenge", color: "from-orange-500 to-orange-600" },
     snapai: { icon: "🤖", title: "Snap with AI", color: "from-pink-500 to-pink-600" },
-    memewar: { icon: "😂", title: "Memewar", color: "from-yellow-500 to-yellow-600" },
+    memewar: { icon: "😂", title: "Meme War", color: "from-yellow-500 to-yellow-600" },
+    funevent: { icon: "🎉", title: "Fun Event", color: "from-red-500 to-red-600" },
+    workshop: { icon: "�", title: "Fullstack Web Development Workshop", color: "from-indigo-500 to-indigo-600" },
   };
   
   const config = eventConfig[eventType] || { icon: "🎯", title: eventType, color: "from-indigo-500 to-indigo-600" };
@@ -290,9 +302,9 @@ function getContactCard(): ContactCardData {
       { name: 'Mrs. S. Saranya', phone: '9952683505' },
     ],
     studentCoordinators: [
-      { name: 'S. Rasu', phone: '9345128264' },
-      { name: 'V. Suseetha', phone: '7708767410' },
-      { name: 'B. Dharunkumar', phone: '8526506445' },
+      { name: 'S. Basu', phone: '9345128264' },
+      { name: 'V. Suweetha', phone: '7708767410' },
+      { name: 'B. Dharunkumar', phone: '8526506448' },
     ],
   };
 }
@@ -377,7 +389,7 @@ export function processQuery(userQuery: string): QueryResponse {
       response: '',
       infoCard: {
         title: 'About ASTA\'25',
-        content: '✨ **Event Highlights:**\n\n• 📅 **Date:** October 24, 2025\n• 🏆 **Events:** 7 Exciting Competitions (Technical & Non-Technical)\n• 💰 **Registration:** ₹300 only\n• 🎁 **Prizes:** Attractive Cash Rewards\n\n💡 **I can help you with:**\n\n• 📋 Event schedules & venues\n• 🎯 Registration details\n• 🛠️ Workshop information\n• 📞 Contact organizers\n• 🏅 Results & winners\n\nUse the quick buttons below to explore! 👇',
+        content: '✨ **Event Highlights:**\n\n• 📅 **Date:** October 24, 2025\n• 🏆 **Events:** 10 Exciting Competitions (Technical & Non-Technical)\n• 💰 **Registration:** ₹300 only\n• 🎁 **Prizes:** Attractive Cash Rewards\n\n💡 **I can help you with:**\n\n• 📋 Event schedules & venues\n• 🎯 Registration details\n• 🛠️ Workshop information\n• 📞 Contact organizers\n• 🏅 Results & winners\n\nUse the quick buttons below to explore! 👇',
         icon: '🎉',
         color: 'from-purple-500 to-indigo-600',
       }
@@ -401,13 +413,14 @@ export function processQuery(userQuery: string): QueryResponse {
     return {
       response: "Click on any event to see results:",
       actions: [
+        { label: "📝 Paper Presentation Results", query: "paper results" },
         { label: "🌐 Web Forge Results", query: "webforge results" },
-        { label: "💻 Decode Results", query: "decode results" },
-        { label: "📡 Vibecon Results", query: "vibecon results" },
-        { label: "📝 Paper Results", query: "paper results" },
+        { label: "🤝 Decode Results", query: "decode results" },
+        { label: "🫨 Vibecode Results", query: "vibecode results" },
         { label: "🗺️ Map Challenge Results", query: "mystric map results" },
         { label: "🤖 Snap AI Results", query: "snap ai results" },
-        { label: "😂 Memewar Results", query: "memewar results" },
+        { label: "😂 Meme War Results", query: "meme war results" },
+        { label: "🎉 Fun Event Results", query: "fun event results" },
       ]
     };
   }
@@ -415,15 +428,17 @@ export function processQuery(userQuery: string): QueryResponse {
   // Check if it's asking for event list - provide visual event cards
   if (isEventListQuery(userQuery)) {
     return {
-      response: "We have 7 exciting events at ASTA'25:",
+      response: "We have 10 exciting events at ASTA'25:",
       eventCards: [
-        { icon: "🌐", title: "Web Forge", venue: "Website Building Competition", time: "Technical Event", color: "from-blue-500 to-blue-600", query: "web forge" },
-        { icon: "💻", title: "Decode & Recode", venue: "Python to C Translation", time: "Technical Event", color: "from-purple-500 to-purple-600", query: "decode recode" },
-        { icon: "📡", title: "Internet Using Vibecon", venue: "Internet Technologies", time: "Technical Event", color: "from-cyan-500 to-cyan-600", query: "vibecon" },
-        { icon: "📝", title: "Paper Presentation", venue: "Submit by Oct 14, 2025", time: "Technical Event", color: "from-green-500 to-green-600", query: "paper presentation" },
-        { icon: "🗺️", title: "Mystric Map Challenge", venue: "Map-based Puzzles", time: "Non-Technical", color: "from-orange-500 to-orange-600", query: "mystric map" },
-        { icon: "🤖", title: "Snap with AI", venue: "AI Image Replication", time: "Non-Technical", color: "from-pink-500 to-pink-600", query: "snap with ai" },
-        { icon: "😂", title: "Memewar", venue: "Meme Competition", time: "Non-Technical", color: "from-yellow-500 to-yellow-600", query: "memewar" },
+        { icon: "📝", title: "Paper Presentation", venue: "CSE & IT Venues", time: "11:15 AM", color: "from-green-500 to-green-600", query: "paper presentation" },
+        { icon: "🌐", title: "Web Forge", venue: "VB-SF-01 (CSE Lab)", time: "11:15 AM", color: "from-blue-500 to-blue-600", query: "web forge" },
+        { icon: "💻", title: "Decode & Recode", venue: "VB-SF-01 (IT Lab)", time: "11:15 AM", color: "from-purple-500 to-purple-600", query: "decode recode" },
+        { icon: "📡", title: "Internet Using Vibecode", venue: "VB-FF-07 (AI&DS Lab)", time: "11:30 AM", color: "from-cyan-500 to-cyan-600", query: "vibecode" },
+        { icon: "👦", title: "Mystric Map Challenge", venue: "Mechanical Seminar Hall", time: "11:15 AM", color: "from-orange-500 to-orange-600", query: "mystric map" },
+        { icon: "🤖", title: "Snap with AI", venue: "VB-SF-15 (IV IT)", time: "11:45 AM", color: "from-pink-500 to-pink-600", query: "snap with ai" },
+        { icon: "👊", title: "Meme War", venue: "VB-TF-12 (III AI&DS)", time: "1:30 PM", color: "from-yellow-500 to-yellow-600", query: "meme war" },
+        { icon: "🎉", title: "Fun Event", venue: "VB-TF-16", time: "12:00 PM", color: "from-red-500 to-red-600", query: "fun event" },
+        { icon: "💼", title: "Fullstack Workshop", venue: "EEE Seminar Hall", time: "11:00 AM", color: "from-indigo-500 to-indigo-600", query: "workshop" },
       ]
     };
   }

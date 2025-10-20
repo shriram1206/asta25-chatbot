@@ -126,7 +126,7 @@ export default function InfoCard({ title, content, icon = '💡', color = 'from-
       {title && (
         <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-200 dark:border-gray-700">
           <div className={`w-12 h-12 bg-gradient-to-br ${color} rounded-2xl flex items-center justify-center text-2xl shadow-md`} aria-hidden="true">
-            {icon}
+            <span className="emoji-font">{icon}</span>
           </div>
           <h3 className="text-xl font-extrabold text-apple-dark dark:text-gray-200 tracking-tight flex-1">
             {title}

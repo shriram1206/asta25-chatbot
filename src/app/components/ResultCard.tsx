@@ -24,7 +24,7 @@ export default function ResultCard({ icon, title, winner, runnerUp, status, colo
     >
       <div className="flex items-center gap-4 mb-5">
         <div className={`w-16 h-16 bg-gradient-to-br ${color} rounded-2xl flex items-center justify-center text-3xl shadow-md`} aria-hidden="true">
-          {icon}
+          <span className="emoji-font">{icon}</span>
         </div>
         <div className="flex-1">
           <h3 className="text-apple-dark dark:text-gray-200 font-bold text-xl tracking-tight">{title}</h3>

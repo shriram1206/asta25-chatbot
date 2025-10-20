@@ -54,6 +54,13 @@ body {
   letter-spacing: -0.011em;
 }
 
+/* Emoji font support for proper rendering */
+.emoji-font {
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

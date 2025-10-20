@@ -67,7 +67,13 @@ export default function ContactCard({
           </div>
           <div>
             <p className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-0.5">Mobile</p>
-            <p className="text-sm font-bold text-apple-dark dark:text-gray-200">{mobile}</p>
+            <a 
+              href={`tel:${mobile}`} 
+              className="text-sm font-bold text-apple-dark dark:text-gray-200 hover:text-apple-blue dark:hover:text-blue-400 transition-colors underline"
+              aria-label={`Call ${mobile}`}
+            >
+              {mobile}
+            </a>
           </div>
         </div>
       </div>
@@ -87,7 +93,13 @@ export default function ContactCard({
                 <User className="w-4 h-4 text-gray-500 dark:text-gray-400" />
                 <span className="font-bold text-apple-dark dark:text-gray-200 text-sm">{coordinator.name}</span>
               </div>
-              <span className="font-extrabold text-apple-blue dark:text-blue-400 text-sm">{coordinator.phone}</span>
+              <a 
+                href={`tel:${coordinator.phone}`}
+                className="font-extrabold text-apple-blue dark:text-blue-400 text-sm hover:underline transition-all"
+                aria-label={`Call ${coordinator.name} at ${coordinator.phone}`}
+              >
+                {coordinator.phone}
+              </a>
             </div>
           ))}
         </div>
@@ -108,7 +120,13 @@ export default function ContactCard({
                 <User className="w-4 h-4 text-gray-500 dark:text-gray-400" />
                 <span className="font-bold text-apple-dark dark:text-gray-200 text-sm">{coordinator.name}</span>
               </div>
-              <span className="font-extrabold text-apple-blue dark:text-blue-400 text-sm">{coordinator.phone}</span>
+              <a 
+                href={`tel:${coordinator.phone}`}
+                className="font-extrabold text-apple-blue dark:text-blue-400 text-sm hover:underline transition-all"
+                aria-label={`Call ${coordinator.name} at ${coordinator.phone}`}
+              >
+                {coordinator.phone}
+              </a>
             </div>
           ))}
         </div>

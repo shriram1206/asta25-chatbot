@@ -31,7 +31,7 @@ export default function EventCard({ icon, title, venue, time, color, onClick }: 
     >
       <div className="flex items-start justify-between mb-3 sm:mb-4">
         <div className={`w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br ${color} rounded-2xl flex items-center justify-center text-xl sm:text-2xl shadow-md`} aria-hidden="true">
-          {icon}
+          <span className="emoji-font">{icon}</span>
         </div>
                 <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400 dark:text-gray-400 group-hover:text-apple-blue dark:group-hover:text-blue-400 group-focus:text-apple-blue dark:group-focus:text-blue-400 group-focus:translate-x-1 transition-all" aria-hidden="true" />
       </div>

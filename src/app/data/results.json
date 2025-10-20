@@ -9,15 +9,20 @@
     "runnerUp": "Pending",
     "status": "Event on Oct 24, 2025"
   },
-  "vibecon": {
+  "vibecode": {
     "winner": "Pending",
     "runnerUp": "Pending",
     "status": "Event on Oct 24, 2025"
   },
-  "paper": {
+  "paper_cse": {
     "winner": "Pending",
     "runnerUp": "Pending",
-    "status": "Submission deadline: Oct 14, 2025"
+    "status": "Event on Oct 24, 2025"
+  },
+  "paper_it": {
+    "winner": "Pending",
+    "runnerUp": "Pending",
+    "status": "Event on Oct 24, 2025"
   },
   "mystricmap": {
     "winner": "Pending",
@@ -33,5 +38,15 @@
     "winner": "Pending",
     "runnerUp": "Pending",
     "status": "Event on Oct 24, 2025"
+  },
+  "funevent": {
+    "winner": "Pending",
+    "runnerUp": "Pending",
+    "status": "Event on Oct 24, 2025"
+  },
+  "workshop": {
+    "winner": "N/A",
+    "runnerUp": "N/A",
+    "status": "Workshop - All participants"
   }
 }

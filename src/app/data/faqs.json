@@ -1,35 +1,35 @@
 [
   {
     "question": ["what events are happening", "show schedule", "event list", "what's happening", "events today"],
-    "answer": "We have 7 exciting events at ASTA'25:\n\n**Technical Events:**\n🌐 Web Forge\n💻 Decode & Recode\n📡 Internet Using Vibecon\n📝 Paper Presentation\n\n**Non-Technical Events:**\n🗺️ Mystric Map Challenge\n🤖 Snap with AI\n😂 Memewar\n\nAsk me about any specific event for details!"
+    "answer": "We have 10 exciting events at ASTA'25:\n\n**Technical Events:**\n📝 Paper Presentation (CSE & IT)\n🌐 Web Forge (Website Building)\n💻 Decode & Recode\n📡 Internet Using Vibecode\n\n**Creative & Fun Events:**\n🗺️ Mystric Map Challenge\n🤖 Snap with AI\n😂 Meme War\n🎉 Fun Event\n\n**Workshop:**\n👨‍💻 Fullstack Web Development Workshop\n\nAsk me about any specific event for detailed information!"
   },
   {
     "question": ["web forge", "website building", "where is web forge"],
-    "answer": "🌐 **Web Forge** (Website Building)\n\nCreate stunning websites and showcase your web development skills!\n\n📍 **Venue:** Computer Lab 1, Second Floor\n⏰ **Time:** 10:00 AM - 12:00 PM\n📋 **Category:** Technical Event\n\n**Requirements:**\n• HTML, CSS, JavaScript knowledge\n• 2 hours to build a complete website\n• Judged on design, functionality & creativity"
+    "answer": "🌐 **Web Forge** (Website Building)\n\nCreate stunning websites and showcase your web development skills!\n\n📍 **Venue:** VB-SF-01 (CSE Lab)\n⏰ **Time:** 11:15 AM - 12:30 PM\n📋 **Category:** Technical Event\n\n**Student Coordinators:**\n• P. Gowtham S - IV CSE (📱 80888 58849)\n• R. Sowmiya - III CSE\n• S. Vahith Hasan - II CSE\n• U. Ariharan - II CSE\n\n**Requirements:**\n• HTML, CSS, JavaScript knowledge\n• Build a complete website in the given time\n• Judged on design, functionality & creativity"
   },
   {
     "question": ["decode recode", "python to c", "decode and recode", "where is decode"],
-    "answer": "💻 **Decode & Recode**\n\nConvert Python code to C - Test your coding translation skills!\n\n📍 **Venue:** Programming Lab, Ground Floor\n⏰ **Time:** 1:00 PM - 3:00 PM\n📋 **Category:** Technical Event\n\n**Challenge:**\n• Convert given Python algorithms to C\n• Focus on logic translation & optimization\n• Time limit: 2 hours\n• Judged on accuracy & code quality"
+    "answer": "💻 **Decode & Recode**\n\nTest your coding translation and problem-solving skills!\n\n📍 **Venue:** VB-SF-01 (IT Lab)\n⏰ **Time:** 11:15 AM - 2:30 PM\n📋 **Category:** Technical Event\n\n**Student Coordinators:**\n• J. Jamuna - III IT\n• M. Pongurudharshini - III IT\n• M. Deva Prasanna - II IT\n\n**Challenge:**\n• Decode and recode programming challenges\n• Focus on logic translation & optimization\n• Judged on accuracy & code quality"
   },
   {
-    "question": ["internet using vibecon", "vibecon", "where is vibecon"],
-    "answer": "📡 **Internet Using Vibecon**\n\nExplore internet technologies in an innovative way!\n\n📍 **Venue:** Network Lab, First Floor\n⏰ **Time:** 10:00 AM - 12:00 PM\n📋 **Category:** Technical Event\n\n**What to expect:**\n• Hands-on with networking protocols\n• Real-time internet challenges\n• Team-based problem solving\n• Advanced networking concepts"
+    "question": ["internet using vibecon", "vibecon", "vibecode", "where is vibecon", "internet using vibecode"],
+    "answer": "📡 **Internet Using Vibecode**\n\nExplore innovative coding and internet technologies!\n\n📍 **Venue:** VB-FF-07 (AI&DS Lab)\n⏰ **Time:** 11:30 AM - 12:30 PM\n📋 **Category:** Technical Event\n\n**Student Coordinators:**\n• K. Rakesh - III AI&DS (📱 86104 70981)\n• S. Ajay - III AI&DS\n• Elaya Bharathi - III AI&DS\n\n**What to expect:**\n• Hands-on with Vibecode technology\n• Real-time coding challenges\n• Team-based problem solving\n• Innovative internet applications"
   },
   {
-    "question": ["where is paper presentation", "paper presentation", "paper submission"],
-    "answer": "📝 **Paper Presentation**\n\nPresent your research and innovative ideas!\n\n📍 **Venue:** Seminar Hall, Main Block\n⏰ **Time:** 2:00 PM - 5:00 PM\n⚠️ **Submission Deadline:** 14.10.2025\n📋 **Category:** Technical Event\n\n**Guidelines:**\n• 10-15 minutes presentation + 5 min Q&A\n• Focus on AI, Data Science, or emerging tech\n• Judged on innovation, clarity & technical depth\n• PPT submission required by deadline"
+    "question": ["where is paper presentation", "paper presentation", "paper submission", "cse paper", "it paper"],
+    "answer": "📝 **Paper Presentation**\n\nPresent your research and innovative ideas!\n\n**Two Venues:**\n📍 **CSE Venue:** VB-TF-09 (II CSE Classroom)\n📍 **IT Venue:** VB-TF-12 (III IT Classroom)\n⏰ **Time:** 11:15 AM onwards\n📋 **Category:** Technical Event\n\n**CSE Coordinators:**\n• C. Nantha Kumar - IV CSE (📱 93636 46169)\n• M. Madhan - IV CSE (📱 93422 03675)\n• S. Rasu - III CSE (� 97897 15790)\n• R. Lingeshwaran - II CSE\n\n**IT Coordinators:**\n• G. Parvesh - IV IT (📱 90922 00240)\n• S. Sankar - III IT\n\n**Guidelines:**\n• 10-15 minutes presentation + Q&A\n• Focus on AI, Data Science, or emerging tech\n• Judged on innovation, clarity & technical depth"
   },
   {
-    "question": ["mystric map", "map challenge", "mystric map challenge"],
-    "answer": "🗺️ **Mystric Map Challenge**\n\nSolve mysterious map-based puzzles and challenges!\n\n📍 **Venue:** Central Courtyard & Campus Grounds\n⏰ **Time:** 11:00 AM - 1:00 PM\n📋 **Category:** Non-Technical Event\n\n**Adventure includes:**\n• Campus-wide treasure hunt\n• QR code puzzles & riddles\n• Team collaboration required\n• Exciting prizes for winners!"
+    "question": ["mystric map", "map challenge", "mystric map challenge", "mystic map"],
+    "answer": "🗺️ **Mystric Map Challenge**\n\nSolve mysterious map-based puzzles and challenges!\n\n📍 **Venue:** Mechanical Seminar Hall (SB-SB-GF-03)\n⏰ **Time:** 11:15 AM - 12:30 PM\n📋 **Category:** Non-Technical Event\n\n**Student Coordinators:**\n• Sivamani M - IV CSE (📱 63808 05521)\n• Gokul S - IV CSE (📱 99944 37394)\n• E.R. Chandru - II CSE\n• V. Santhiya - II CSE\n\n**Adventure includes:**\n• Campus-wide treasure hunt\n• QR code puzzles & riddles\n• Team collaboration required\n• Exciting prizes for winners!"
   },
   {
     "question": ["snap with ai", "ai image", "replicate image", "snap ai"],
-    "answer": "🤖 **Snap with AI**\n\nReplicate images using AI prompts - Test your AI prompting skills!\n\n📍 **Venue:** AI Lab, Second Floor\n⏰ **Time:** 3:00 PM - 5:00 PM\n📋 **Category:** Non-Technical Event\n\n**Creative challenge:**\n• Use AI tools to recreate given images\n• Master prompt engineering techniques\n• Creativity meets technology\n• Best prompt artists win amazing prizes!"
+    "answer": "🤖 **Snap with AI**\n\nReplicate images using AI prompts - Test your AI prompting skills!\n\n📍 **Venue:** VB-SF-15 (IV IT Classroom)\n⏰ **Time:** 11:45 AM - 3:00 PM\n📋 **Category:** Creative Event\n\n**Student Coordinators:**\n• K. Divya - IV IT (📱 88078 61577)\n• U. Rajavel - III IT\n• M. Sakthi - II IT\n• K. Janani - II IT\n\n**Creative challenge:**\n• Use AI tools to recreate given images\n• Master prompt engineering techniques\n• Creativity meets technology\n• Best prompt artists win amazing prizes!"
   },
   {
-    "question": ["memewar", "meme war", "meme competition"],
-    "answer": "😂 **Memewar**\n\nBattle it out with the funniest memes!\n\n📍 **Venue:** Student Activity Hall\n⏰ **Time:** 4:00 PM - 6:00 PM\n📋 **Category:** Non-Technical Event\n\n**Meme battle rules:**\n• Create original & hilarious memes\n• Tech & college life themes preferred\n• Live voting by audience\n• Funniest meme creator wins big!"
+    "question": ["memewar", "meme war", "meme competition", "meme event"],
+    "answer": "😂 **Meme War**\n\nBattle it out with the funniest memes!\n\n📍 **Venue:** VB-TF-12 (III AI&DS Classroom)\n⏰ **Time:** 1:30 PM - 3:00 PM\n📋 **Category:** Non-Technical Event\n\n**Student Coordinators:**\n• K. Adikkalam - II AI&DS (📱 80153 50774)\n• S. Govindharaj - II AI&DS\n• D. Mega Varshini - III AI&DS\n\n**Meme battle rules:**\n• Create original & hilarious memes\n• Tech & college life themes preferred\n• Live voting by audience\n• Funniest meme creator wins big!"
   },
   {
     "question": ["show results", "results", "who won", "winner", "winners"],
@@ -44,12 +44,12 @@
     "answer": "📞 **Contact ASTA'25**\n\n📧 Email: astasct2k25@gmail.com\n🌐 Website: www.selvamtech.edu.in\n📱 Mobile: 94866 48899\n\n**Faculty Coordinators:**\n• Mrs.P.Abinaya: 7397548124\n• Mrs.M.Sumathi: 9789673675\n• Mrs.S.Saranya: 9952683505\n\n**Student Coordinators:**\n• S.Basu: 9345128264\n• V.Suweetha: 7708767410\n• B.Dharunkumar: 8526506448"
   },
   {
-    "question": ["workshop", "fullstack", "web development workshop"],
-    "answer": "Learn **modern web development** from industry experts!\n\n• **Topics:** Frontend + Backend development\n• **Duration:** Full day session\n• **Level:** Beginner to Intermediate\n• **Venue:** To be announced\n\nGet hands-on experience with latest technologies!"
+    "question": ["workshop", "fullstack", "web development workshop", "full stack workshop"],
+    "answer": "👨‍💻 **Workshop on Fullstack Web Development**\n\nLearn modern web development from industry experts!\n\n📍 **Venue:** EEE Seminar Hall (VB-TF-01)\n⏰ **Time:** 11:00 AM - 3:00 PM\n📋 **Category:** Workshop\n\n**Student Coordinators:**\n• Shrimathi K - IV CSE (📱 90421 82168)\n• N. Sathiya Moorthi - IV IT (📱 98942 75989)\n• R. Bavin Kumar - IV IT\n• S. Santhosh Kumar - IV CSE (📱 70108 29960)\n\n**What you'll learn:**\n• Frontend technologies (React, HTML, CSS, JavaScript)\n• Backend development (Node.js, databases)\n• Full-stack project development\n• Industry best practices\n• Hands-on experience with latest technologies!"
   },
   {
-    "question": ["fun activities", "entertainment", "games"],
-    "answer": "Enjoy **exciting fun activities** throughout the day!\n\n• **Games and competitions**\n• **Entertainment sessions**\n• **Networking opportunities**\n• **Surprise events**\n\nStay tuned for more details! 🎉"
+    "question": ["fun event", "fun activities", "entertainment", "games"],
+    "answer": "🎉 **Fun Event**\n\nEnjoy exciting games, entertainment, and fun challenges!\n\n📍 **Venue:** VB-TF-16 (AI&DS Classroom)\n⏰ **Time:** 12:00 PM - 3:00 PM\n📋 **Category:** Fun & Entertainment\n\n**Student Coordinators:**\n• C. Keerthivasan - IV CSE (📱 88388 65686)\n• K.M. Praveen - IV IT (📱 63797 37244)\n• Vishalini - III AI&DS\n\n**Activities include:**\n• Interactive games and competitions\n• Entertainment sessions\n• Team challenges\n• Networking opportunities\n• Surprise events and prizes!\n\nRelax, have fun, and make new friends! �"
   },
   {
     "question": ["prizes", "cash prizes", "awards", "winning"],
@@ -64,7 +64,7 @@
     "answer": "📍 **Address:**\nSalem Main Road, Koulpalayam\nNamakkal - 637 003, Tamil Nadu\n\n📱 **Phone:** 94866 48899\n🌐 **Website:** www.selvamtech.edu.in\n\n**About:**\n• Autonomous Institution\n• NAAC Accredited with **'A' Grade**\n• Approved by **AICTE**\n• Affiliated to **Anna University Chennai**"
   },
   {
-    "question": ["schedule", "timing", "time table", "agenda", "date", "when"],
-    "answer": "🗽️ **Date:** October 24, 2025 (Friday)\n\n⏰ **Event Timeline:**\n• **Morning:** Registration & Inaugural ceremony\n• **10:00 AM onwards:** Technical & Non-Technical Events\n• **Afternoon:** Workshop & Competitions\n• **Evening:** Prize Distribution & Valedictory\n\n📝 **Detailed schedule** will be shared with registered participants!"
+    "question": ["schedule", "timing", "time table", "agenda", "date", "when", "event schedule"],
+    "answer": "� **ASTA'25 - October 24, 2025 (Friday)**\n\n⏰ **Complete Event Schedule:**\n\n**Morning Session (11:00 AM - 12:30 PM):**\n• 11:00 AM - Fullstack Web Development Workshop\n• 11:15 AM - Paper Presentation (CSE & IT)\n• 11:15 AM - Web Forge\n• 11:15 AM - Decode & Recode (till 2:30 PM)\n• 11:15 AM - Mystric Map Challenge\n• 11:30 AM - Internet Using Vibecode\n• 11:45 AM - Snap with AI (till 3:00 PM)\n\n**🍽️ Lunch Break: 1:30 PM - 2:30 PM**\n\n**Afternoon Session (12:00 PM - 3:00 PM):**\n• 12:00 PM - Fun Event\n• 1:30 PM - Meme War\n• 3:00 PM - Workshop concludes\n\n**Evening:**\n• Prize Distribution & Valedictory Ceremony\n\n� All venues are in the college campus!"
   }
 ]
