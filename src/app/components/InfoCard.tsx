@@ -56,6 +56,7 @@ export default function InfoCard({ title, content, icon = '💡', color = 'from-
       // Default actions
       actions.push(
         { icon: MapPin, label: 'All Events', query: 'show all events' },
+        { icon: Clock, label: 'Inauguration Hall', query: 'inauguration venue' },
         { icon: Phone, label: 'Contact Us', query: 'contact' }
       );
     }

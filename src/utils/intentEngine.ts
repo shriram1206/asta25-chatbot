@@ -216,7 +216,7 @@ function formatResultCard(eventType: string): ResultCardData | null {
     snapai: { icon: "🤖", title: "Snap with AI", color: "from-pink-500 to-pink-600" },
     memewar: { icon: "😂", title: "Meme War", color: "from-yellow-500 to-yellow-600" },
     funevent: { icon: "🎉", title: "Fun Event", color: "from-red-500 to-red-600" },
-    workshop: { icon: "�", title: "Fullstack Web Development Workshop", color: "from-indigo-500 to-indigo-600" },
+    workshop: { icon: "💼", title: "Fullstack Web Development Workshop", color: "from-indigo-500 to-indigo-600" },
   };
   
   const config = eventConfig[eventType] || { icon: "🎯", title: eventType, color: "from-indigo-500 to-indigo-600" };
@@ -239,8 +239,17 @@ function formatResultCard(eventType: string): ResultCardData | null {
  */
 function isEventListQuery(query: string): boolean {
   const normalized = normalize(query);
-  const eventKeywords = ['events', 'schedule', 'happening', 'event list', 'all events'];
+  const eventKeywords = ['events', 'happening', 'event list', 'all events', 'show events', 'what events'];
   return eventKeywords.some(keyword => normalized.includes(keyword));
+}
+
+/**
+ * Check if query is asking for schedule/timing
+ */
+function isScheduleQuery(query: string): boolean {
+  const normalized = normalize(query);
+  const scheduleKeywords = ['schedule', 'timing', 'time table', 'timetable', 'agenda', 'when'];
+  return scheduleKeywords.some(keyword => normalized.includes(keyword));
 }
 
 /**
@@ -302,7 +311,7 @@ function getContactCard(): ContactCardData {
       { name: 'Mrs. S. Saranya', phone: '9952683505' },
     ],
     studentCoordinators: [
-      { name: 'S. Basu', phone: '9345128264' },
+      { name: 'S. Rasu', phone: '9345128264' },
       { name: 'V. Suweetha', phone: '7708767410' },
       { name: 'B. Dharunkumar', phone: '8526506448' },
     ],
@@ -389,7 +398,7 @@ export function processQuery(userQuery: string): QueryResponse {
       response: '',
       infoCard: {
         title: 'About ASTA\'25',
-        content: '✨ **Event Highlights:**\n\n• 📅 **Date:** October 24, 2025\n• 🏆 **Events:** 10 Exciting Competitions (Technical & Non-Technical)\n• 💰 **Registration:** ₹300 only\n• 🎁 **Prizes:** Attractive Cash Rewards\n\n💡 **I can help you with:**\n\n• 📋 Event schedules & venues\n• 🎯 Registration details\n• 🛠️ Workshop information\n• 📞 Contact organizers\n• 🏅 Results & winners\n\nUse the quick buttons below to explore! 👇',
+        content: '✨ **Event Highlights:**\n\n• 📅 **Date:** October 24, 2025\n• 🎊 **Inauguration:** 10:00 AM - Mechanical Seminar Hall\n• 👤 **Chief Guest:** Er. T. Sadananthan (Ettik Engineering)\n• 👤 **Guest of Honor:** Er. Deepak Madheswaran (HCL Tech)\n• 🍽 **Lunch:** Day Scholar Food Court (1:30 PM)\n• 🏆 **Events:** 10 Exciting Competitions\n• 💰 **Registration:** ₹300 only\n• 🎁 **Prizes:** Attractive Cash Rewards\n\n💡 **I can help you with:**\n\n• 📋 Event schedules & venues\n• 🎯 Registration & dress code\n• 🔧 Workshop information\n• 🍽 Lunch & inauguration details\n• 👤 Guest information\n• 📞 Contact organizers\n• 🏅 Results & winners\n\nUse the quick buttons below to explore! 👇',
         icon: '🎉',
         color: 'from-purple-500 to-indigo-600',
       }
@@ -417,7 +426,7 @@ export function processQuery(userQuery: string): QueryResponse {
         { label: "🌐 Web Forge Results", query: "webforge results" },
         { label: "🤝 Decode Results", query: "decode results" },
         { label: "🫨 Vibecode Results", query: "vibecode results" },
-        { label: "🗺️ Map Challenge Results", query: "mystric map results" },
+        { label: "🗺 Map Challenge Results", query: "mystric map results" },
         { label: "🤖 Snap AI Results", query: "snap ai results" },
         { label: "😂 Meme War Results", query: "meme war results" },
         { label: "🎉 Fun Event Results", query: "fun event results" },
@@ -425,20 +434,37 @@ export function processQuery(userQuery: string): QueryResponse {
     };
   }
   
+  // Check if it's asking for schedule/timeline BEFORE checking for event list
+  // Schedule queries should show the complete timeline from FAQ, not just event cards
+  if (isScheduleQuery(userQuery)) {
+    const faqResponse = findBestMatch(userQuery);
+    if (faqResponse) {
+      return {
+        response: '',
+        infoCard: {
+          title: 'Event Schedule',
+          content: faqResponse,
+          icon: '📅',
+          color: 'from-orange-500 to-orange-600',
+        }
+      };
+    }
+  }
+  
   // Check if it's asking for event list - provide visual event cards
   if (isEventListQuery(userQuery)) {
     return {
       response: "We have 10 exciting events at ASTA'25:",
       eventCards: [
-        { icon: "📝", title: "Paper Presentation", venue: "CSE & IT Venues", time: "11:15 AM", color: "from-green-500 to-green-600", query: "paper presentation" },
+        { icon: "📝", title: "Paper Presentation", venue: "VB-SF-09 & VB-SF-12", time: "11:15 AM", color: "from-green-500 to-green-600", query: "paper presentation" },
         { icon: "🌐", title: "Web Forge", venue: "VB-SF-01 (CSE Lab)", time: "11:15 AM", color: "from-blue-500 to-blue-600", query: "web forge" },
-        { icon: "💻", title: "Decode & Recode", venue: "VB-SF-01 (IT Lab)", time: "11:15 AM", color: "from-purple-500 to-purple-600", query: "decode recode" },
+        { icon: "💻", title: "Decode & Recode", venue: "VB-SF-01 (IT Lab)", time: "11:30 AM", color: "from-purple-500 to-purple-600", query: "decode recode" },
         { icon: "📡", title: "Internet Using Vibecode", venue: "VB-FF-07 (AI&DS Lab)", time: "11:30 AM", color: "from-cyan-500 to-cyan-600", query: "vibecode" },
         { icon: "👦", title: "Mystric Map Challenge", venue: "Mechanical Seminar Hall", time: "11:15 AM", color: "from-orange-500 to-orange-600", query: "mystric map" },
-        { icon: "🤖", title: "Snap with AI", venue: "VB-SF-15 (IV IT)", time: "11:45 AM", color: "from-pink-500 to-pink-600", query: "snap with ai" },
-        { icon: "👊", title: "Meme War", venue: "VB-TF-12 (III AI&DS)", time: "1:30 PM", color: "from-yellow-500 to-yellow-600", query: "meme war" },
-        { icon: "🎉", title: "Fun Event", venue: "VB-TF-16", time: "12:00 PM", color: "from-red-500 to-red-600", query: "fun event" },
-        { icon: "💼", title: "Fullstack Workshop", venue: "EEE Seminar Hall", time: "11:00 AM", color: "from-indigo-500 to-indigo-600", query: "workshop" },
+        { icon: "🤖", title: "Snap with AI", venue: "VB-SF-15 (IV IT)", time: "12:30 PM", color: "from-pink-500 to-pink-600", query: "snap with ai" },
+        { icon: "👊", title: "Meme War", venue: "VB-TF-12 (III AI&DS)", time: "12:00 PM", color: "from-yellow-500 to-yellow-600", query: "meme war" },
+        { icon: "🎉", title: "Fun Event", venue: "VB-SF-16 (II IT)", time: "11:15 AM", color: "from-red-500 to-red-600", query: "fun event" },
+        { icon: "💼", title: "Fullstack Workshop", venue: "EEE Seminar Hall", time: "11:15 AM", color: "from-indigo-500 to-indigo-600", query: "workshop" },
       ]
     };
   }
