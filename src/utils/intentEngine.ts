@@ -398,7 +398,7 @@ export function processQuery(userQuery: string): QueryResponse {
       response: '',
       infoCard: {
         title: 'About ASTA\'25',
-        content: '✨ **Event Highlights:**\n\n• 📅 **Date:** October 24, 2025\n• 🎊 **Inauguration:** 10:00 AM - Mechanical Seminar Hall\n• 👤 **Chief Guest:** Er. T. Sadananthan (Ettik Engineering)\n• 👤 **Guest of Honor:** Er. Deepak Madheswaran (HCL Tech)\n• 🍽 **Lunch:** Day Scholar Food Court (1:30 PM)\n• 🏆 **Events:** 10 Exciting Competitions\n• 💰 **Registration:** ₹300 only\n• 🎁 **Prizes:** Attractive Cash Rewards\n\n💡 **I can help you with:**\n\n• 📋 Event schedules & venues\n• 🎯 Registration & dress code\n• 🔧 Workshop information\n• 🍽 Lunch & inauguration details\n• 👤 Guest information\n• 📞 Contact organizers\n• 🏅 Results & winners\n\nUse the quick buttons below to explore! 👇',
+        content: '✨ **Event Highlights:**\n\n• 📅 **Date:** October 24, 2025\n• 🎊 **Inauguration:** 10:00 AM - Mechanical Seminar Hall\n• 👤 **Chief Guest:** Er. T. Sadananthan (Ettik Engineering)\n• 👤 **Guest of Honor:** Er. Deepak Madheswaran (HCL Tech)\n• 🍽 **Lunch:** Sundar Pichai Boys Hostel Mess (1:30 PM)\n• 🏆 **Events:** 10 Exciting Competitions\n• 💰 **Registration:** ₹300 only\n• 🎁 **Prizes:** Attractive Cash Rewards\n\n💡 **I can help you with:**\n\n• 📋 Event schedules & venues\n• 🎯 Registration & dress code\n• 🔧 Workshop information\n• 🍽 Lunch & inauguration details\n• 👤 Guest information\n• 📞 Contact organizers\n• 🏅 Results & winners\n\nUse the quick buttons below to explore! 👇',
         icon: '🎉',
         color: 'from-purple-500 to-indigo-600',
       }
