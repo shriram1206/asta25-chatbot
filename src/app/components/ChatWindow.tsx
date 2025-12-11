@@ -551,7 +551,7 @@ export default function ChatWindow() {
         className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl px-4 sm:px-6 py-1.5 border-t border-gray-200 dark:border-gray-800 text-left"
       >
         <p className="text-[9px] sm:text-xs text-gray-600 dark:text-gray-400 font-medium">
-          Developed by Department of <span className="font-bold text-apple-dark dark:text-gray-300">SHRIRAM M</span> • Selvam College of Technology
+          Developed by <span className="font-bold text-apple-dark dark:text-gray-300">SHRIRAM M</span> • Selvam College of Technology
         </p>
       </motion.div>
     </motion.div>
